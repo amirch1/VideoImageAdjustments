@@ -3,16 +3,20 @@
     width: 640px;
     height: 360px;
     overflow: hidden;
+    font-family: Helvetica Neue, Helvetica, Arial;
+    font-size: 11px;
 }
 .settingsBox{
     position: absolute;
     background-color: rgba(0,0,0,0.75);
-    width: 140px;
+    width: 200px;
     height: 200px;
-    right: -140px;
+    right: -205px;
     top: 40px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
+    padding-left: 5px;
+    padding-top: 5px;
     -webkit-transition: right 0.3s ease;
     -moz-transition: right 0.3s ease;
     -o-transition: right 0.3s ease;
@@ -43,5 +47,28 @@
     box-shadow: -1px 0px 1px #fff;
 }
 .settingsBoxIcon.open{
-    right: 140px;
+    right: 205px;
+}
+.filtersTable {
+    width: 200px;
+    height: 140px;
+    color: #D0D0D0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.filtersTable td {
+    vertical-align: middle;
+}
+.filtersResetBtn{
+    color: #2EC7E1;
+    margin-left: 156px;
+    margin-top: 3px;
+    text-decoration: underline;
+}
+.title{
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 5px;
 }
