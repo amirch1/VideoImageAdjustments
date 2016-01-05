@@ -1,0 +1,47 @@
+.videoHolder{
+    position: absolute;
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+}
+.settingsBox{
+    position: absolute;
+    background-color: rgba(0,0,0,0.75);
+    width: 140px;
+    height: 200px;
+    right: -140px;
+    top: 40px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    -webkit-transition: right 0.3s ease;
+    -moz-transition: right 0.3s ease;
+    -o-transition: right 0.3s ease;
+    -ms-transition: right 0.3s ease;
+}
+.settingsBox.open{
+    right: 0;
+}
+.settingsBoxIcon{
+    position: absolute;
+    background-color: rgba(0,0,0,0.75);
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAgMAAACdGdVrAAAADFBMVEVdXV3///9dXV1dXV2ikMWtAAAAA3RSTlMAACYoe0EjAAAAPUlEQVQIW2MIBQMGfgbmA6FfcVPx/7FQQLn4EDD1/wsWCioHpfgZxK+AKfs/KNRfiNxVZArZdgYGDobQUABJBDrQidiBAwAAAABJRU5ErkJggg==');
+    background-repeat: no-repeat;
+    background-position: 5px;
+    width: 32px;
+    height: 56px;
+    right: 0px;
+    top: 112px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    cursor: pointer;
+    -webkit-transition: right 0.3s ease;
+    -moz-transition: right 0.3s ease;
+    -o-transition: right 0.3s ease;
+    -ms-transition: right 0.3s ease;
+}
+.settingsBoxIcon:hover{
+    box-shadow: -1px 0px 1px #fff;
+}
+.settingsBoxIcon.open{
+    right: 140px;
+}
