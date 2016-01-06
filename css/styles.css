@@ -11,12 +11,12 @@
     background-color: rgba(0,0,0,0.75);
     width: 200px;
     height: 200px;
-    right: -205px;
+    right: -210px;
     top: 40px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    padding-left: 5px;
-    padding-top: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
     -webkit-transition: right 0.3s ease;
     -moz-transition: right 0.3s ease;
     -o-transition: right 0.3s ease;
@@ -28,13 +28,10 @@
 .settingsBoxIcon{
     position: absolute;
     background-color: rgba(0,0,0,0.75);
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAgMAAACdGdVrAAAADFBMVEVdXV3///9dXV1dXV2ikMWtAAAAA3RSTlMAACYoe0EjAAAAPUlEQVQIW2MIBQMGfgbmA6FfcVPx/7FQQLn4EDD1/wsWCioHpfgZxK+AKfs/KNRfiNxVZArZdgYGDobQUABJBDrQidiBAwAAAABJRU5ErkJggg==');
-    background-repeat: no-repeat;
-    background-position: 5px;
-    width: 32px;
-    height: 56px;
+    width: 18px;
+    height: 32px;
     right: 0px;
-    top: 112px;
+    top: 128px;
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
     cursor: pointer;
@@ -47,7 +44,7 @@
     box-shadow: -1px 0px 1px #fff;
 }
 .settingsBoxIcon.open{
-    right: 205px;
+    right: 210px;
 }
 .filtersTable {
     width: 200px;
@@ -71,4 +68,18 @@
     font-weight: bold;
     font-size: 12px;
     margin-left: 5px;
+}
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right:8px solid white;
+    margin-left: 6px;
+    margin-top: 8px;
+}
+.open .arrow-left {
+    border-right: 0px solid transparent;
+    border-left: 8px solid white;
+    margin-left: 8px;
 }
