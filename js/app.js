@@ -16,9 +16,52 @@ function resetFilters() {
 	$(".sepiaFilter").simpleSlider("setValue", 0);
 }
 
+function bindSliders() {
+	$(".brightnessFilter").bind("slider:changed", function(event, data) {
+		addFilter('brightness', data.value);
+	});
+	$(".contrastFilter").bind("slider:changed", function(event, data) {
+		addFilter('contrast', data.value);
+	});
+	$(".grayscaleFilter").bind("slider:changed", function(event, data) {
+		addFilter('grayscale', data.value);
+	});
+	$(".saturationFilter").bind("slider:changed", function(event, data) {
+		addFilter('saturate', data.value);
+	});
+	$(".hueFilter").bind("slider:changed", function(event, data) {
+		addFilter('hue-rotate', data.value + 'deg');
+	});
+	$(".sepiaFilter").bind("slider:changed", function(event, data) {
+		addFilter('sepia', data.value);
+	});
+}
+
+function addFilter(filterName, value) {
+	var userAgent = navigator.userAgent;
+	var filterString = "webkitFilter";
+	if (userAgent.indexOf('Firefox') != -1){
+		filterString = "filter";
+	}
+	var oldStyle = $("#vid").css(filterString);
+	var filterVal = filterName + '(' + value + ')';
+
+	if(oldStyle === "none") {
+		$('#vid').css(filterString,filterVal);
+	}
+	else {
+		var currentStyle = $("#vid").css(filterString).split(" ").filter(function (name) {
+			return name.indexOf(filterName) == -1;
+		});
+		currentStyle.push(filterName + '(' + value + ')');
+		$("#vid").css(filterString, currentStyle.join(" "));
+	}
+}
+
 window.onload = function() {
 	setupSliders();
 	resetFilters();
+	bindSliders();
 
 	$(".settingsBoxIcon").on("click", function(){
 		$(".settingsBox, .settingsBoxIcon").toggleClass("open");
@@ -27,7 +70,4 @@ window.onload = function() {
 	$(".filtersResetBtn").on("click", function(){
 		resetFilters();
 	});
-
-
-
 };
