@@ -10,7 +10,7 @@ The following filters are availble:
 * Sepia
 
 ##Demo
-Use this link to view the demo.
+Use [this link](http://amirch1.github.io/VideoImageAdjustments/) to view the demo.
 
 ##Compatibility  
 The filters work well on Chrome, Safari and FireFox. 
