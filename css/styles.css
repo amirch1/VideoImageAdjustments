@@ -1,0 +1,85 @@
+.videoHolder{
+    position: absolute;
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+    font-family: Helvetica Neue, Helvetica, Arial;
+    font-size: 11px;
+}
+.settingsBox{
+    position: absolute;
+    background-color: rgba(0,0,0,0.75);
+    width: 200px;
+    height: 200px;
+    right: -210px;
+    top: 40px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding-left: 10px;
+    padding-top: 10px;
+    -webkit-transition: right 0.3s ease;
+    -moz-transition: right 0.3s ease;
+    -o-transition: right 0.3s ease;
+    -ms-transition: right 0.3s ease;
+}
+.settingsBox.open{
+    right: 0;
+}
+.settingsBoxIcon{
+    position: absolute;
+    background-color: rgba(0,0,0,0.75);
+    width: 18px;
+    height: 32px;
+    right: 0px;
+    top: 128px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    cursor: pointer;
+    -webkit-transition: right 0.3s ease;
+    -moz-transition: right 0.3s ease;
+    -o-transition: right 0.3s ease;
+    -ms-transition: right 0.3s ease;
+}
+.settingsBoxIcon:hover{
+    box-shadow: -1px 0px 1px #fff;
+}
+.settingsBoxIcon.open{
+    right: 210px;
+}
+.filtersTable {
+    width: 200px;
+    height: 140px;
+    color: #D0D0D0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.filtersTable td {
+    vertical-align: middle;
+}
+.filtersResetBtn{
+    color: #2EC7E1;
+    margin-left: 156px;
+    margin-top: 3px;
+    text-decoration: underline;
+}
+.title{
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right:8px solid white;
+    margin-left: 6px;
+    margin-top: 8px;
+}
+.open .arrow-left {
+    border-right: 0px solid transparent;
+    border-left: 8px solid white;
+    margin-left: 8px;
+}
