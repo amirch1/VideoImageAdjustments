@@ -1,8 +1,16 @@
 # Video Image Adjustments
-Adjust the image settings of the video
+Adjust the image settings of the video using CSS3 filters.
 
-##Usage
-Open the right hand side menu to adjust the video image.
+The following filters are availble:
+* Brightness
+* Contrast
+* Greyscale
+* Saturation
+* Hue
+* Sepia
+
+##Demo
+Use this link to view the demo.
 
 ##Compatibility  
 The filters work well on Chrome, Safari and FireFox. 
