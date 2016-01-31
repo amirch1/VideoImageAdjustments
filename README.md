@@ -6,7 +6,7 @@ The following filters are availble:
 * Contrast
 * Greyscale
 * Saturation
-* Hue
+* Hue-rotate
 * Sepia
 
 ##Demo
